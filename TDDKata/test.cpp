@@ -24,7 +24,7 @@
 	}
 
 	TEST(TDDKata, TestNegativeArgs) {
-		std::string args = "-10, -2";
+		std::string args = "-10,-2";
 		int expected = -1;
 
 		Calculator Calc;
@@ -74,7 +74,7 @@
 
 	TEST(TDDKata, TestFloatArgs) {
 		std::string args = "1,2.0";
-		int expected = -2;
+		int expected = -1;
 
 		Calculator Calc;
 		ASSERT_EQ(Calc.Add(args), expected);
